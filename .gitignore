@@ -1,0 +1,84 @@
+# ============================================
+# 个人作品集仓库 .gitignore
+# 作用：告诉 Git 哪些文件「不要」上传
+# ============================================
+
+# ---------- 操作系统垃圾文件 ----------
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+Thumbs.db:metaData
+desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# ---------- 编辑器 / IDE 临时文件 ----------
+.idea/
+.vscode/
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+env/
+ENV/
+.ipynb_checkpoints/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ---------- Node.js ----------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json.bak
+
+# ---------- Office 临时文件 ----------
+~$*
+.~lock.*#
+
+# ---------- R 语言（护理统计常用） ----------
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# ---------- SPSS / 统计软件临时文件 ----------
+*.sav.tmp
+*.spv.tmp
+
+# ---------- 编译产物 ----------
+*.o
+*.obj
+*.exe
+*.dll
+*.class
+build/
+dist/
+out/
+
+# ---------- 日志与压缩包 ----------
+*.log
+*.tmp
+*.zip
+*.rar
+*.7z
+
+# ---------- 环境变量 / 密钥（安全！） ----------
+.env
+.env.*
+*.pem
+*.key
